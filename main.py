@@ -86,7 +86,7 @@ def getUserJson(userInfo,token):
             "text": userInfo['classDescription']
         },
         #如果你来自其他学校，请自行打卡抓包修改地址字段
-        "areaStr": {"streetNumber":"","street":"长椿路辅路","district":"中原区","city":"郑州市","province":"河南省","town":"","pois":"河南工业大学(莲花街校区)","lng":113.55064699999795 + random.random()/1000,"lat":34.83870696238093 + random.random()/1000,"address":"中原区长椿路辅路河南工业大学(莲花街校区)","text":"河南省-郑州市","code":""},
+        "areaStr": {"streetNumber":"","street":"福兴路","district":"城厢区","city":"莆田市","province":"福建省","town":"","pois":"学园山庄","lng":119.01435100000339,"lat":25.44905000389018,"address":"城厢区福兴路学园山庄","text":"福建省-莆田市","code":""},
         "reportdate": round(time.time()*1000),
         "customerid": userInfo['customerId'],
         "deptid": userInfo['classId'],
@@ -97,16 +97,49 @@ def getUserJson(userInfo,token):
         "userid": round(time.time()),
         "updatainfo": [  
             {
-                "propertyname": "temperature",
-                "value": temperature
-            },
-            {
-                "propertyname": "symptom",
-                "value": "无症状"
-            }
+        "propertyname": "isGoWarningAdress",
+        "value": "低"
+      },
+      {
+        "propertyname": "isis",
+        "value": "无异动"
+      },
+      {
+        "propertyname": "temperature",
+        "value": temperature
+      },
+      {
+        "propertyname": "symptom",
+        "value": "无症状"
+      },
+      {
+        "propertyname": "isIsolation",
+        "value": "否"
+      },
+      {
+        "propertyname": "isConfirmed",
+        "value": "否"
+      },
+      {
+        "propertyname": "isTransitArea",
+        "value": "否"
+      },
+      {
+        "propertyname": "cxjh",
+        "value": "否"
+      },
+      {
+        "propertyname": "isAlreadyInSchool",
+        "value": "否"
+      },
+      {
+        "propertyname": "ownPhone",
+        "value": ""
+      }
         ],
         "customerAppTypeRuleId": 147,
         "clockState": 0,
+        "gpsType": 0,
         "token": token
         },
         "token": token
