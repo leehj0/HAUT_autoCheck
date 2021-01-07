@@ -88,13 +88,14 @@ def getUserJson(userInfo,token):
         #如果你来自其他学校，请自行打卡抓包修改地址字段
         "areaStr": {"streetNumber":"","street":"福兴路","district":"城厢区","city":"莆田市","province":"福建省","town":"","pois":"学园山庄","lng":119.01435100000339,"lat":25.44905000389018,"address":"城厢区福兴路学园山庄","text":"福建省-莆田市","code":""},
         "reportdate": round(time.time()*1000),
-        "customerid": userInfo['customerId'],
-        "deptid": userInfo['classId'],
+        "customerid": "1355",
+        "deptid": 42660,
         "source": "app",
-        "templateid": "clockSign2",
-        "stuNo": userInfo['stuNo'],
-        "username": userInfo['username'],
-        "userid": round(time.time()),
+        "templateid": "pneumonia",
+        "stuNo": "201811405212",
+        "username": "李华杰",
+        "phonenum": "",
+        "userid": "10928266",
         "updatainfo": [  
             {
         "propertyname": "isGoWarningAdress",
@@ -137,12 +138,9 @@ def getUserJson(userInfo,token):
         "value": ""
       }
         ],
-        "customerAppTypeRuleId": 147,
-        "clockState": 0,
         "gpsType": 0,
-        "token": token
-        },
-        "token": token
+        "token": "d5f45c1a-f13b-4724-90e5-3bdc74e37ca5"
+        }
     }    
 
 #信息获取函数
